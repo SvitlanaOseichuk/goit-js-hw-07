@@ -29,5 +29,5 @@ const images = [
   ];
 
 for(let im of images) document.querySelector('.gallery')
-.insertAdjacentHTML('beforeEnd', `<li><img class=image width=400px src="${im.url}" alt="${im.alt}"></li>`);
+.insertAdjacentHTML('beforeEnd', `<li><img class=image src="${im.url}" alt="${im.alt}"></li>`);
 
