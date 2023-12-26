@@ -3,10 +3,12 @@
   console.log(`Numbers of categories: ${itemsNumbers.length}`);
 
 
-  const categoriesProperty = document.querySelectorAll("h2");
-  
- categoriesProperty.forEach((liItem) => {
-    console.log(`Category: ${liItem.textContent}`);
-    console.log(`Elements: ${liItem.nextElementSibling.querySelectorAll("li").length}`);
+  itemsNumbers.forEach((liItem) => {
+
+    const category = liItem.querySelector("h2").textContent;
+    const elements = liItem.querySelectorAll("li").length;
+
+    console.log(`Category: ${category}`);
+    console.log(`Elements: ${elements}`);
   })
 

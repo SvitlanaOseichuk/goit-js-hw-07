@@ -5,12 +5,13 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const divClr = document.querySelector(".widget");
-const spanClr = document.querySelector(".color");
+const widget = document.querySelector(".widget");
+const spanColor = document.querySelector(".color");
 const btn = document.querySelector(".change-color");
-const elementBody = divClr.parentNode;
+
 
 
 btn.addEventListener("click", () => {
- spanClr.style.backgroundColor = elementBody.style.backgroundColor = getRandomHexColor();
+  spanColor.style.color = getRandomHexColor();
+ spanColor.textContent = getRandomHexColor();
 });
