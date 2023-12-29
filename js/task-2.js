@@ -36,7 +36,7 @@ const gallery = document.querySelector(".gallery");
 let galleryHtml = "";
 
 images.forEach(im => {
-  galleryHtml +=  `<li><img class=image src="${im.url}" alt="${im.alt}"></li>`;
+  galleryHtml +=  `<li><img class=gallery-img src="${im.url}" alt="${im.alt}"></li>`;
 })
 
 gallery.innerHTML = galleryHtml;

@@ -1,12 +1,13 @@
 
 const userName = document.querySelector("#name-input");
-let output = document.querySelector('#name-output');
+const output = document.querySelector('#name-output');
 
-userName.addEventListener('input', (e) => {;
-
-     output.textContent = e.target.value.trim();
+userName.addEventListener('input', (e) => {
+      
+     const valueTrim = e.target.value.trim();
+     output.textContent = valueTrim;
      
-        if (e.target.value.trim() === '' ){
+        if (valueTrim === '' ){
          return output.textContent = 'Anonymous';
         } 
    
